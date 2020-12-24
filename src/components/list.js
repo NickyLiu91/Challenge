@@ -59,15 +59,9 @@ class List extends React.Component {
     this.setState({
       search: event.target.value
     }, () => {
-      if (this.state.search != '') {
-        this.setState({
-          list: this.state.originalList.filter(obj => obj.login.toLowerCase().includes(this.state.search.toLowerCase()))
-        })
-      } else {
-        this.setState({
-          list: this.state.originalList
-        })
-      }
+      this.setState({
+        list: this.state.originalList.filter(obj => obj.login.toLowerCase().includes(this.state.search.toLowerCase()))
+      })
     })
   }
 
