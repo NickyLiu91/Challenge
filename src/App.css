@@ -53,7 +53,6 @@ a {
 #followers-list {
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: space-around;*/
 }
 
 .followerImg {
@@ -127,11 +126,15 @@ a {
   border-bottom: 5px gold solid;
   padding: 2vh;
   margin: 2vh;
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;
-  /*background-color: green;*/
+  background-color: black;
   margin: 0
+}
+
+.user:first-child{
+  border-top: 5px gold solid;
 }
 
 .user p {
@@ -143,8 +146,8 @@ a {
 }
 
 .userImg {
-  height: 40vh;
-  width: 40vh;
+  height: 20vh;
+  width: 20vh;
   border: solid gold 2px
 }
 
@@ -163,8 +166,4 @@ a {
   text-align: center;
   width: 50%;
   padding-bottom: 1vh
-}
-
-#listContainer {
-  /*background-color: red*/
 }
