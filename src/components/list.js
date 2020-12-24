@@ -29,8 +29,7 @@ class List extends React.Component {
       })
     })
 
-    window.addEventListener('scroll', this.handleScroll)
-
+    // window.addEventListener('scroll', this.handleScroll)
   }
 
   fetchNext = () => {
@@ -60,9 +59,15 @@ class List extends React.Component {
     this.setState({
       search: event.target.value
     }, () => {
-      this.setState({
-        list: this.state.originalList.filter(obj => obj.login.toLowerCase().includes(this.state.search.toLowerCase()))
-      })
+      if (this.state.search != '') {
+        this.setState({
+          list: this.state.originalList.filter(obj => obj.login.toLowerCase().includes(this.state.search.toLowerCase()))
+        })
+      } else {
+        this.setState({
+          list: this.state.originalList
+        })
+      }
     })
   }
 
@@ -73,7 +78,8 @@ class List extends React.Component {
   }
 
   handleScroll = (event) => {
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+
+    if (event.target.scrollHeight - event.target.scrollTop === event.target.clientHeight) {
       this.fetchNext()
     }
   }
@@ -92,7 +98,7 @@ class List extends React.Component {
               <li>Picture</li>
             </ul>
           </div>
-          <ul id="list">
+          <ul id="list" onScroll={(event) => {this.handleScroll(event)}}>
             {this.displayUsers()}
           </ul>
         </div>

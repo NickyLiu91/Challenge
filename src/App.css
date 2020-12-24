@@ -127,10 +127,11 @@ a {
   padding: 2vh;
   margin: 2vh;
   width: 80%;
+  height: 20vh;
   display: flex;
   align-items: center;
-  background-color: black;
-  margin: 0
+  /*background-color: green;*/
+  margin: 0;
 }
 
 .user:first-child{
@@ -153,7 +154,11 @@ a {
 
 #list {
   display: flex;
-  justify-content: center
+  justify-content: center;
+  align-content: flex-start;
+  height: 99vh;
+  overflow: scroll;
+  padding: 0
 }
 
 #listBar {
@@ -166,4 +171,8 @@ a {
   text-align: center;
   width: 50%;
   padding-bottom: 1vh
+}
+
+#loading {
+  background-color: gray
 }
