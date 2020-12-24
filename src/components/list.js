@@ -72,7 +72,6 @@ class List extends React.Component {
   }
 
   handleScroll = (event) => {
-
     if (event.target.scrollHeight - event.target.scrollTop === event.target.clientHeight) {
       this.fetchNext()
     }
