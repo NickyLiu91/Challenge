@@ -1,0 +1,170 @@
+body {
+  text-align: center;
+  background-color: black;
+  color: gold;
+  display: flex;
+  justify-content: space-around;
+}
+
+h2 {
+  border-top: solid gold 5px;
+  border-bottom: solid gold 5px;
+  margin-bottom: 0px
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 1vh;
+  display: flex;
+  flex-wrap: wrap
+}
+
+#navBar {
+  text-align: left;
+  padding: 0vh;
+  display: flex;
+  border-bottom: solid gold 2px;
+}
+
+#navBar li {
+  text-align: center;
+  width: 50%;
+  padding-bottom: 1vh
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#navBar li a, #navBar li a:visited, #navBar li a:hover, #navBar li a:active {
+  text-decoration: none;
+  color: gold;
+}
+
+#searchBar {
+  background-color: black;
+  color: gold;
+  padding: 2vh;
+  border-bottom: solid gold 5px;
+}
+
+#followers-list {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: space-around;*/
+}
+
+.followerImg {
+  height: 20vh;
+  width: 20vh;
+  border: 5px solid gold
+}
+
+.follower {
+  border: 2px solid gold;
+  background-color: #4d4d4d;
+  min-height: 20vh;
+  min-width: 20vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  padding-bottom: 2vh;
+  margin-left: 5vh;
+  /*margin-right: 5vh;*/
+  margin-bottom: 5vh;
+  text-align: center
+}
+
+.repo {
+  border-bottom: solid gold 2px;
+  text-align: center;
+  background-color: #4d4d4d;
+  width: 100%
+}
+
+.repo:last-child{
+  border-bottom: none;
+}
+
+#topHalf {
+  display: flex;
+  height: 70vh;
+  align-items: center
+}
+
+#profile {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /*border-right: 2px solid red*/
+}
+
+#profile img {
+  height: 50vh;
+  width: 50vh;
+  border: 2px gold solid;
+}
+
+#repositories {
+  height: 70vh;
+  overflow: scroll;
+  width: 50%
+}
+
+#reposTitle {
+  position: sticky;
+  top: 0;
+  opacity: 1;
+  background-color: black
+}
+
+.user {
+  color: gold;
+  font-size: 5vh;
+  border-bottom: 5px gold solid;
+  padding: 2vh;
+  margin: 2vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /*background-color: green;*/
+  margin: 0
+}
+
+.user p {
+  width: 50vw
+}
+
+.user div {
+  width: 50vw;
+}
+
+.userImg {
+  height: 40vh;
+  width: 40vh;
+  border: solid gold 2px
+}
+
+#list {
+  display: flex;
+  justify-content: center
+}
+
+#listBar {
+  padding: 0vh;
+  display: flex;
+  border-bottom: solid gold 2px;
+}
+
+#listBar li {
+  text-align: center;
+  width: 50%;
+  padding-bottom: 1vh
+}
+
+#listContainer {
+  /*background-color: red*/
+}
